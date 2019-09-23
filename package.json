@@ -1,0 +1,23 @@
+{
+  "name": "zero-to-kubernetes-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardWatkins1/zero-to-kubernetes-node.git"
+  },
+  "author": "Richard Watkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardWatkins1/zero-to-kubernetes-node/issues"
+  },
+  "homepage": "https://github.com/RichardWatkins1/zero-to-kubernetes-node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
