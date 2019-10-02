@@ -3,6 +3,7 @@ const express = require('express')
 const MongoClient = require('mongodb').MongoClient
 const mongoURL = process.env.MONGO_URL || 'mongodb://localhost:27017'
 const multer = require('multer')
+const marked = require('marked')
 
 const app = express()
 
@@ -52,7 +53,9 @@ async function initMongo() {
 
 async function retrieveNotes(db) {
   const notes = (await db.find().toArray()).reverse()
-  return notes
+  return notes.map(it => {
+    return { ...it, description: marked(it.description) }
+  })
 }
 
 async function saveNote(db, note) {
