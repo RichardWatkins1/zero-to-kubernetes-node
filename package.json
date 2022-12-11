@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/RichardWatkins1/zero-to-kubernetes-node#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "marked": "^0.7.0",
     "mongodb": "^3.3.2",
     "multer": "^1.4.2",
